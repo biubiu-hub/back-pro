@@ -31,8 +31,8 @@ export default {
     return {
     //   表单数据绑定对象
       loginForm: {
-        username: '',
-        password: ''
+        username: 'admin',
+        password: '123456'
       },
       //   表单验证规则
       loginFormRules: {
@@ -70,7 +70,7 @@ export default {
         // 存token
         window.sessionStorage.setItem('token', res.data.token)
         // // 登录跳转
-        this.$router.push('/home')
+        this.$router.push('/backhome')
       })
     }
   },

@@ -13,6 +13,8 @@ module.exports = {
   rules: {
     'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
     'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'eqeqeq': ['off'] // 不检查==
+    eqeqeq: ['off'] // 不检查==
+    // 'semi': 0 // 不检查分号
+    // 'semi': ["error","always"] // 使用分号
   }
 }
