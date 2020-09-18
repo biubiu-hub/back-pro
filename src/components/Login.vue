@@ -69,6 +69,8 @@ export default {
         console.log(res)
         // 存token
         window.sessionStorage.setItem('token', res.data.token)
+        // 存username
+        window.sessionStorage.setItem('username', res.data.username)
         // // 登录跳转
         this.$router.push('/backhome')
       })
